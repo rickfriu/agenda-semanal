@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 50vh;
+
+}
+
+:root {
+    --primary-color: #f4eded;
+    --secondary-color: #9f2deb;
+    --background-color: #f4f8f7;
+    --font-family: "Playwrite DK Loopet", cursive;
+}
+
+    body {
+        font-family: var(--font-family);
+        background-color: var(--secondary-color);
+        color: var(--secondary-color);
+        line-height: 1.6;
+        font-size: 15px;
+        flex-direction: column;
+    }
+
+    header {
+        background: linear-gradient(45deg, var(--secondary-color), #ede9e6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1.0rem 1rem;
+        text-align: center;
+    }
+
+    header h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1.0rem 1rem;
+        text-align: center;
+        color: #efe4f1;
+    }
+
+    main {
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        background-color: #efe4f1;
+    }
+
+    article {
+        padding: 1.5rem;
+        border-radius: 30px;
+        background-color: #efe4f1;
+    }
+
+    article h3 {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        color: var(--secondary-color);
+    }
+
+    footer {
+        background: linear-gradient(45deg, var(--secondary-color), #ede9e6);
+        color: rgb(252, 251, 251);
+        text-align: center;
+        padding: 1.5rem;
+        margin-top: 2rem;
+        font-size: 1.3rem;
+    }
